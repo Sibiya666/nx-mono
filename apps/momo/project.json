@@ -79,6 +79,10 @@
       "options": {
         "jestConfig": "apps/momo/jest.config.ts"
       }
+    },
+    "deploy": {
+      "dependsOn": ["build"],
+       "command": "netlify deploy --dir=dist/mono"
     }
   }
 }

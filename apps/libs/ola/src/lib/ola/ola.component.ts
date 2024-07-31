@@ -8,4 +8,8 @@ import { CommonModule } from '@angular/common';
   templateUrl: './ola.component.html',
   styleUrl: './ola.component.css',
 })
-export class OlaComponent {}
+export class OlaComponent {
+  constructor() {
+    console.log('ola');
+  }
+}
